@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emotion → Motion Visual Engine</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <canvas id="emotion-canvas"></canvas>
+      <section class="overlay">
+        <header>
+          <h1>Emotion → Motion</h1>
+          <p>Type your feeling. Watch the canvas breathe.</p>
+        </header>
+        <label class="input-label" for="emotion-input">Your words</label>
+        <textarea
+          id="emotion-input"
+          placeholder="I feel heavy but hopeful..."
+          rows="4"
+          spellcheck="false"
+        ></textarea>
+        <div class="readout">
+          <span id="emotion-name">neutral</span>
+          <span id="emotion-meta">intensity 0.00 · steady</span>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
